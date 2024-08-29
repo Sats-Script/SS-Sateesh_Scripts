@@ -10,9 +10,10 @@ y=$2
 
 if [ $x -lt $y ] | z
 
-if [ $z -eq 0 ] then 
+if [ $z -eq 0 ] then {
 echo "$x is small"
 else
 echo "$y is small"
 fi
+}
 fi
