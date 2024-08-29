@@ -15,4 +15,3 @@ echo "$x is small"
 #else
 #echo "$y is small"
 fi
-fi
