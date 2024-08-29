@@ -12,7 +12,7 @@ if [ $x -lt $y ] | z
 
 if $z==0 then 
 echo "$x is small"
-else
-echo "$y is small"
+#else
+#echo "$y is small"
 fi
 fi
