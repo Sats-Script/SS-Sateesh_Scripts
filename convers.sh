@@ -1,7 +1,7 @@
 #!/bin/bash
 
-I=Sateesh
-U=Harish
+I=122345
+U=678554
 
 echo "$I : Hey $U how are you bro"
 echo "$U  : hey $I i am fine bro "
