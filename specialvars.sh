@@ -5,7 +5,7 @@ X=$?
 y=$#
 z=$@
 a=$$
-sleep 100
+sleep 5
 A=$!
 
 
