@@ -1,9 +1,17 @@
 #!/bin/bash
 
-x=$@
+x=$0
+X=$?
 y=$#
-z=$0
+z=$@
+a=$$
 
-echo "$x"
-echo "$y"
-echo "$z"
+
+
+
+echo " Running script name $x"
+echo "Previous command is $X"
+echo " number of variables given $y"
+echo " variables given $z"
+echo "present running PID $a"
+
