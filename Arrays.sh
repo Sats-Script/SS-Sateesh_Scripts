@@ -10,4 +10,4 @@ Fruits=("$x" "$y" "$z")
 # echo "Please enter Second fruit name"
 # echo "Please enter Third fruit name"
 
-Echo "entered fruit names are : ${Fruits[@]}"
+Echo "entered fruit names are : ${Fruits[$x]}"
