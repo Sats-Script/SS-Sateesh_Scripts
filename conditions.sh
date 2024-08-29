@@ -1,6 +1,7 @@
 #!/bin/bash
 
-x=$1  y=$2
+x=$1 
+ y=$2
 if[ x -gt y ] 
 then  echo "$x is greater than $y"
 else 
