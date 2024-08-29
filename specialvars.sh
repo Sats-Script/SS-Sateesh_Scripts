@@ -5,6 +5,8 @@ X=$?
 y=$#
 z=$@
 a=$$
+sleep 100
+A=$!
 
 
 
@@ -14,3 +16,4 @@ echo "Previous command is $X"
 echo " number of variables given $y"
 echo " variables given $z"
 echo "present running PID $a"
+echo "last running PID $A"
