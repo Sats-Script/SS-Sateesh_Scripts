@@ -5,7 +5,7 @@ X=$?
 y=$#
 z=$@
 a=$$
-slepp 5 &
+sleep 5 &
 A=$!
 
 
