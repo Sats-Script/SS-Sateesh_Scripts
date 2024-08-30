@@ -9,6 +9,7 @@ exit 1
 else
 echo "Script is running now as sudo user : enter package name " 
 read pack
+check
 fi
 
 validate(){
@@ -25,6 +26,7 @@ installate(){
     dnf install $pack -y
 }
 
-exit 1
+check(){
 dnf list installed $pack
 validate $? "$pack "
+}
