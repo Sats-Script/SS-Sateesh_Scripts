@@ -17,7 +17,7 @@ installate(){
 }
 
 check(){
-dnf list installed $pack
+dnf list installed $pack >> null.txt
 validate $? "$pack "
 }
 
