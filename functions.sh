@@ -17,6 +17,7 @@ validate(){
     installate
     else
     echo "$2 is already installed "
+    fi
 }
 
 installate(){
