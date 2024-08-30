@@ -9,7 +9,7 @@ exit 1
 else
 echo "Script is running now as sudo user : enter package name " 
 read pack
-check
+check $pack
 fi
 
 validate(){
