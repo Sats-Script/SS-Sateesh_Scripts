@@ -11,12 +11,12 @@ validate(){
     then
     echo -e "$Y $2  not installed $N "
     else
-    echo "$G $2 is removed $N "
+    echo -e "$G $2 is removed $N "
     fi
 }
 
 check(){
-dnf  remove $pack 
+dnf  remove $pack -y 
 validate $? "$pack "
 }
 
