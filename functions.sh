@@ -25,5 +25,6 @@ installate(){
     dnf install $pack -y
 }
 
+exit 1
 dnf list installed $pack
 validate $? "$pack "
