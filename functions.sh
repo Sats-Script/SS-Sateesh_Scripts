@@ -1,6 +1,10 @@
 #!/bin/bash
 
 Uid=$(id -u)
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+Y="\e[33m"
 
 validate(){
     if [ $1 -ne 0 ]
@@ -23,10 +27,10 @@ validate $? "$pack "
 
 if [ $Uid -ne 0 ] 
 then
-echo "Please run script as Sudo user ; current userid is :$Uid "
+echo -e " $R Please run script as Sudo user ; $Y current userid is :$Uid "
 exit 1
 else
-echo "Script is running now as sudo user : enter package name " 
+echo -e " $G Script is running now as sudo user : enter package name " 
 read pack
 check $pack
 fi
