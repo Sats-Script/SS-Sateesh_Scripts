@@ -18,11 +18,11 @@ echo -e "$G $pkg Installing $N"
 else
 if test "$pkg" = "$pack2"
 then
-echo "$G $pkg Installing $N"
+echo  -e "$G $pkg Installing $N"
 else
 if [[ "$pkg" == "$pack3" ]]
 then
-echo "$G $pkg Installing $N"
+echo  -e "$G $pkg Installing $N"
 else
 echo -e "$R This Script wont work for entered package $N"
 fi
