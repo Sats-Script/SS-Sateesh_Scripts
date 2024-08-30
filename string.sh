@@ -10,7 +10,7 @@ echo "Enter package name :"
 read pkg
 pack1=mysql
 
-if [ "$pkg" -eq "$pack1" ]
+if [ "$pkg" = "$pack1" ]
 then 
 echo "Installing"
 else
