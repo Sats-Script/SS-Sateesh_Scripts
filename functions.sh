@@ -2,7 +2,7 @@
 
 Uid=$(id -u)
 
-if [ Uid -ne 0 ] 
+if [ $Uid -ne 0 ] 
 then
 echo "Please run script as administrator $Uid "
 else
