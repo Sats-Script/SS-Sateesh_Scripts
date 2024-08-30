@@ -6,8 +6,8 @@ if [ $Uid -ne 0 ]
 then
 echo "Please run script as Sudo user ; current userid is :$Uid "
 else
-echo "Script is running now as sudo user : enter package name $1" 
-package=$1
+echo "Script is running now as sudo user : enter package name " 
+read pack
 fi
 
 validate(){
@@ -21,8 +21,8 @@ validate(){
 }
 
 installate(){
-    dnf install $package -y
+    dnf install $pack -y
 }
 
-dnf list installed $package
-validate $? "$package "
+dnf list installed $pack
+validate $? "$pack "
