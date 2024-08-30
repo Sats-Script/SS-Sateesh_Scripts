@@ -14,15 +14,15 @@ pack3=nginx
 
 if [ "$pkg" = "$pack1" ]
 then 
-echo "$pkg Installing"
+echo -e "$G $pkg Installing $N"
 else
 if test "$pkg" = "$pack2"
 then
-echo "$pkg Installing"
+echo "$G $pkg Installing $N"
 else
 if [[ "$pkg" == "$pack3" ]]
 then
-echo "$pkg Installing"
+echo "$G $pkg Installing $N"
 else
 echo -e "$R This Script wont work for entered package $N"
 fi
