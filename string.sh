@@ -9,12 +9,24 @@ Y="\e[33m"
 echo "Enter package name :"
 read pkg
 pack1=mysql
+pack2=nodejs
+pack3=nginx
 
 if [ "$pkg" = "$pack1" ]
 then 
-echo "Installing"
+echo "$pkg Installing"
 else
-echo "Different pkg"
+if test "$pkg" = "$pack2"
+then
+echo "$pkg Installing"
+else
+if [[ "$pkg" == "$pack3" ]]
+then
+echo "$pkg Installing"
+else
+echo -e "$R This Script wont work for entered package $N"
+fi
+fi
 fi
 
 # validate(){
