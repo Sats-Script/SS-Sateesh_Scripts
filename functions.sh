@@ -30,7 +30,7 @@ then
 echo -e " $R Please run script as Sudo user ; $Y current userid is :$Uid "
 exit 1
 else
-echo -e " $G Script is running now as sudo user : enter package name " 
+echo -e " $G Script is running now as sudo user : enter package name $N " 
 read pack
 check $pack
 fi
