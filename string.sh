@@ -8,8 +8,9 @@ Y="\e[33m"
 
 echo "Enter package name :"
 read pkg
+pack1=mysql
 
-if [ "$pkg" -eq "mysql" ]
+if [ "$pkg" -eq "$pack1" ]
 then 
 echo "Installing"
 else
